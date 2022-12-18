@@ -1,0 +1,49 @@
+@import 'index.css';
+
+.welcome {
+  .mobile {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-family: 'ashgar', sans-serif;
+      font-weight: 400;
+      font-size: 56px;
+      text-transform: capitalize;
+      color: #2d2d2d;
+      margin: 0 0 20px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      color: #1f1249;
+      margin-bottom: 40px;
+      line-height: 160%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    gap: 40px;
+
+    .mobile {
+      display: inline;
+    }
+    .desktop {
+      display: none;
+    }
+
+    .content {
+      text-align: center;
+      h1 {
+        font-size: 42px;
+        margin: 0 0 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
