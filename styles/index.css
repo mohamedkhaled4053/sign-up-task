@@ -29,6 +29,12 @@ body::before {
   width: 100vw;
   height: 100vh;
 }
+@media (max-width: 400px) {
+  .container {
+    height: auto;
+    width: auto;
+  }
+}
 .container .card {
   display: flex;
   align-items: center;
@@ -37,13 +43,45 @@ body::before {
   background: rgba(245, 247, 255, 0.85);
   border-radius: 10px;
 }
-@media (max-width: 400px) {
+.container .card .mobile {
+  display: none;
+}
+.container .card .content {
+  display: flex;
+  flex-direction: column;
+}
+.container .card .content h1 {
+  font-family: "ashgar", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #2d2d2d;
+  margin: 0 0 20px;
+}
+.container .card .content p {
+  font-weight: 400;
+  color: #1f1249;
+  margin-bottom: 40px;
+  line-height: 160%;
+}
+@media (max-width: 992px) {
   .container .card {
-    height: 100vh;
-    width: 100vw;
     flex-direction: column;
     padding: 40px 30px;
     gap: 40px;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  .container .card .content {
+    text-align: center;
+  }
+  .container .card .content h1 {
+    margin: 0 0 10px;
+  }
+  .container .card .mobile {
+    display: inline;
+  }
+  .container .card .desktop {
+    display: none;
   }
 }
 
@@ -61,6 +99,7 @@ body::before {
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
+  border: none;
 }
 
 @font-face {

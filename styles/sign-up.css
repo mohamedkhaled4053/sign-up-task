@@ -1,0 +1,70 @@
+@import 'index.css';
+.sign-up .content {
+  width: 450px;
+}
+.sign-up .content h1 {
+  font-size: 42px;
+}
+.sign-up .content p {
+  font-size: 24px;
+}
+.sign-up .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sign-up .content form div {
+  position: relative;
+}
+.sign-up .content form div::before {
+  position: absolute;
+  width: 29px;
+  height: 20px;
+  left: 20px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: solid 1px #dbe3ff;
+}
+.sign-up .content form div.username::before {
+  content: url("../imgs/User.svg");
+}
+.sign-up .content form div.email::before {
+  content: url("../imgs/EnvelopeSimple.svg");
+}
+.sign-up .content form div.password::before {
+  content: url("../imgs/LockKey.svg");
+}
+.sign-up .content form div input {
+  padding: 8px 20px 8px 60px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #dbe3ff;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+}
+.sign-up .content form div input::-moz-placeholder {
+  color: #3b3b3b;
+}
+.sign-up .content form div input:-ms-input-placeholder {
+  color: #3b3b3b;
+}
+.sign-up .content form div input::placeholder {
+  color: #3b3b3b;
+}
+.sign-up .content form .my-button {
+  margin-top: 10px;
+}
+@media (max-width: 992px) {
+  .sign-up .content {
+    width: 100%;
+  }
+  .sign-up .content h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .sign-up .content p {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=sign-up.css.map */
