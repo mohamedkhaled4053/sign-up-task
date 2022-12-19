@@ -16,6 +16,13 @@
       flex-direction: column;
       gap: 10px;
 
+      .alert{
+        margin: 0;
+        color: red;
+        font-size: 16px;
+      }
+
+
       div {
         position: relative;
         &::before {
@@ -34,7 +41,7 @@
         &.email::before {
           content: url('../imgs/EnvelopeSimple.svg');
         }
-        &.password::before {
+        &.password::before ,&.confirm-password::before{
           content: url('../imgs/LockKey.svg');
         }
 

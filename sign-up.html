@@ -28,14 +28,32 @@
           <h1>create account</h1>
           <p>Go ahead and sign up, let everyone know how awesome you are!</p>
           <form>
-            <div class="username"><input type="text" id="username" placeholder="username" /></div>
-            <div class="email"><input type="email" id="email" placeholder="email" /></div>
-            <div class="password"><input type="password" id="password" placeholder="password" /></div>
-            <div class="password"><input type="password" id="password" placeholder="password" /></div>
+            <div class="username">
+              <input type="text" id="username" placeholder="username" />
+            </div>
+            <p class="alert"></p>
+            <div class="email">
+              <input type="email" id="email" placeholder="email" />
+            </div>
+            <p class="alert"></p>
+            <div class="password">
+              <input type="password" id="password" placeholder="password" />
+            </div>
+            <p class="alert"></p>
+            <div class="confirm-password">
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="password"
+              />
+            </div>
+            <p class="alert"></p>
             <button class="my-button" type="submit">create account</button>
           </form>
         </div>
       </div>
     </div>
+
+    <script src="./src/sign-up.js"></script>
   </body>
 </html>

@@ -13,6 +13,11 @@
   flex-direction: column;
   gap: 10px;
 }
+.sign-up .content form .alert {
+  margin: 0;
+  color: red;
+  font-size: 16px;
+}
 .sign-up .content form div {
   position: relative;
 }
@@ -32,7 +37,7 @@
 .sign-up .content form div.email::before {
   content: url("../imgs/EnvelopeSimple.svg");
 }
-.sign-up .content form div.password::before {
+.sign-up .content form div.password::before, .sign-up .content form div.confirm-password::before {
   content: url("../imgs/LockKey.svg");
 }
 .sign-up .content form div input {
